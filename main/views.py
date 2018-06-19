@@ -22,3 +22,6 @@ def redirectToCss(request, item):
 
 def redirectToFonts(request, item):
     return HttpResponsePermanentRedirect("/static/fonts/" + item)
+
+def redirectToFonts2(request, folder, item):
+    return HttpResponsePermanentRedirect(os.path.join("/static/fonts/", folder, item))

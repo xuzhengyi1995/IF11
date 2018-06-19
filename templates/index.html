@@ -92,7 +92,7 @@
               <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
                 <img src="images/a0.png" alt="...">
               </span>
-              John.Smith <b class="caret"></b>
+              Yi ZHANG <b class="caret"></b>
             </a>
             <ul class="dropdown-menu animated fadeInRight">
               <li>
@@ -197,7 +197,7 @@
                       </span>
                       <span class="hidden-nav-xs clear">
                         <span class="block m-l">
-                          <strong class="font-bold text-lt">John.Smith</strong>
+                          <strong class="font-bold text-lt">Yi ZHANG</strong>
                           <b class="caret"></b>
                         </span>
                         <span class="text-muted text-xs block m-l">Art Director</span>
@@ -419,8 +419,8 @@
                         <i class="on b-light right sm"></i>
                       </span>
                       <div class="clear">
-                        <div><a href="#">Chris Fox</a></div>
-                        <small class="text-muted">New York</small>
+                        <div><a href="#">Zhengyi XU</a></div>
+                        <small class="text-muted">Troyes</small>
                       </div>
                     </li>
                     <li class="list-group-item">
@@ -429,8 +429,18 @@
                         <i class="away b-light right sm"></i>
                       </span>
                       <div class="clear">
-                        <div><a href="#">Lauren Taylor</a></div>
-                        <small class="text-muted">Brussels</small>
+                        <div><a href="#">Xiaowen WANG</a></div>
+                        <small class="text-muted">Paris</small>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
+                        <img src="images/a3.png" alt="...">
+                        <i class="away b-light right sm"></i>
+                      </span>
+                      <div class="clear">
+                        <div><a href="#">Xianglong LI</a></div>
+                        <small class="text-muted">UTT</small>
                       </div>
                     </li>
                   </ul>
@@ -466,6 +476,7 @@
   <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
   <div class="modal fade" id="new_song_modal" tabindex="-1" role="dialog" aria-labelledby="new_song_modalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -478,11 +489,9 @@
         </h5>
       </div>
           <div class="modal-body">
-            <div class="row m-t">
-              <div class="col-md-6">
                 <div class="form-group">
                         <label for="song_name">Name of your song</label>
-                        <input type="text" class="form-control" id="song_name"><br>
+                        <input type="text" class="form-control" id="song_name" value="Fly me to the Moon"><br>
                         <label for="song_type">Song Type</label><br>
                         <div class="btn-group m-r">
     	                    <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle">
@@ -500,25 +509,146 @@
     	                    </ul>
     	                  </div><br><br>
                         <label for="song_type">Compositors</label><br>
-                          <button class="btn btn-sm btn-default">
+                        <button class="btn btn-sm btn-primary btn-rounded">
+                            <span class="text">ZHANG Yi</span>
+                          </button>
+                          <button class="btn btn-sm btn-primary btn-rounded">
+                              <span class="text">XU Zhengyi</span>
+                            </button>
+                          <button class="btn btn-sm btn-default btn-rounded">
         		                  <i class="fa fa-plus text"></i>
         		                  <span class="text">Add</span>
   		                      </button><br><br>
                         <label for="song_type">Tag</label><br>
-                        <textarea class="form-control parsley-validated" rows="3" data-minwords="6" data-required="true" placeholder="Type your tag"></textarea>
-                </div>
+                        <button class="btn btn-sm btn-succeed btn-rounded">
+                            <span class="text">Happy</span>
+                          </button>
+                          <button class="btn btn-sm btn-succeed btn-rounded">
+                              <span class="text">Must listen</span>
+                            </button>
+                          <button class="btn btn-sm btn-default btn-rounded">
+        		                  <i class="fa fa-plus text"></i>
+        		                  <span class="text">Add</span>
+  		                      </button><br><br>
+                <label for="music_file">Chose your music file</label>
+                <input type="file" class="form-control-file" id="music_file"><br>
+                <footer class="footer bg-info">
+                  <div id="jp_container_1">
+                    <div class="jp-type-playlist">
+                      <div id="jplayer_1" class="jp-jplayer hide"></div>
+                      <div class="jp-gui">
+                        <div class="jp-video-play hide">
+                          <a class="jp-video-play-icon">play</a>
+                        </div>
+                        <div class="jp-interface">
+                          <div class="jp-controls">
+                            <div>
+                              <a class="jp-play"><i class="icon-control-play i-2x"></i></a>
+                              <a class="jp-pause hid"><i class="icon-control-pause i-2x"></i></a>
+                            </div>
+                            <div class="hide"><a class="jp-stop"><i class="fa fa-stop"></i></a></div>
+                            <div class="jp-progress hidden-xs">
+                              <div class="jp-seek-bar dk">
+                                <div class="jp-play-bar bg-info">
+                                  <div class="jp-title text-lt">Fly me to the Moon</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted"></div>
+                            <div class="hidden-xs hidden-sm jp-duration text-xs text-muted"></div>
+                            <div class="hidden-xs hidden-sm">
+                              <a class="jp-mute" title="mute"><i class="icon-volume-2"></i></a>
+                              <a class="jp-unmute hid" title="unmute"><i class="icon-volume-off"></i></a>
+                            </div>
+                            <div class="hidden-xs hidden-sm jp-volume">
+                              <div class="jp-volume-bar dk">
+                                <div class="jp-volume-bar-value lter"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
               </div>
-              <div class="col-md-6">
-              </div>
-            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" onclick="addNode()" class="btn btn-primary">Add</button>
+            <button type="button" onclick="addMusic()" data-dismiss="modal" data-toggle="modal" data-target="#upload_succeed_modal" class="btn btn-info">Upload</button>
           </div>
     </div>
   </div>
 </div>
 
+<div class="modal fade" id="upload_succeed_modal" tabindex="-1" role="dialog" aria-labelledby="upload_succeed_modalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="upload_succeed_modalLabel">Upload succeed
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </h5>
+    </div>
+        <div class="modal-body">
+          <filedset>
+            <legend>Result</legend>
+            <h5>Filename : Fly me to the moon.wav</h5>
+            <h5>Length : 5:02</h5>
+            <h5>Compositor : ZHANG Yi</h5>
+            <h5>Author : ZHANG YI</h5>
+            <h5>Infor Blockchain : </h5>
+            <ul>
+              <li>Transaction : 0xfa4ad55ead5e8r9h5y4c8y3l85i1rsfhf5ert8jyu5eg4ds6r4</li>
+              <li>File hash : 0x84hf562j78b2c652c36ed</li>
+            </ul>
+            <footer class="footer bg-info">
+              <div id="jp_container_1">
+                <div class="jp-type-playlist">
+                  <div id="jplayer_1" class="jp-jplayer hide"></div>
+                  <div class="jp-gui">
+                    <div class="jp-video-play hide">
+                      <a class="jp-video-play-icon">play</a>
+                    </div>
+                    <div class="jp-interface">
+                      <div class="jp-controls">
+                        <div>
+                          <a class="jp-play"><i class="icon-control-play i-2x"></i></a>
+                          <a class="jp-pause hid"><i class="icon-control-pause i-2x"></i></a>
+                        </div>
+                        <div class="hide"><a class="jp-stop"><i class="fa fa-stop"></i></a></div>
+                        <div class="jp-progress hidden-xs">
+                          <div class="jp-seek-bar dk">
+                            <div class="jp-play-bar bg-info">
+                              <div class="jp-title text-lt">Fly me to the Moon</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted"></div>
+                        <div class="hidden-xs hidden-sm jp-duration text-xs text-muted"></div>
+                        <div class="hidden-xs hidden-sm">
+                          <a class="jp-mute" title="mute"><i class="icon-volume-2"></i></a>
+                          <a class="jp-unmute hid" title="unmute"><i class="icon-volume-off"></i></a>
+                        </div>
+                        <div class="hidden-xs hidden-sm jp-volume">
+                          <div class="jp-volume-bar dk">
+                            <div class="jp-volume-bar-value lter"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </filedset>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+  </div>
+</div>
+</div>
 </body>
 </html>

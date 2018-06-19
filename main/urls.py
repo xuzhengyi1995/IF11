@@ -11,4 +11,5 @@ urlpatterns = [
     path('js/<folder>/<folder2>/<item>/', views.redirectToJsFolder2),
     path('css/<item>/', views.redirectToCss),
     path('fonts/<item>/', views.redirectToFonts),
+    path('fonts/<folder>/<item>/', views.redirectToFonts2),
 ]

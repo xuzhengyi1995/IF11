@@ -57,7 +57,7 @@ $(document).ready(function(){
     keyEnabled: true,
     audioFullScreen: false
   });
-  
+
   $(document).on($.jPlayer.event.pause, myPlaylist.cssSelector.jPlayer,  function(){
     $('.musicbar').removeClass('animate');
     $('.jp-play-me').removeClass('active');
@@ -84,7 +84,7 @@ $(document).ready(function(){
       var i = Math.floor(Math.random() * (1 + 7 - 1));
       myPlaylist.play(i);
     }
-    
+
   });
 
 
@@ -94,7 +94,7 @@ $(document).ready(function(){
   $("#jplayer_1").jPlayer({
     ready: function () {
       $(this).jPlayer("setMedia", {
-        title: "Big Buck Bunny",
+        title: "Fly me to the moon",
         m4v: "http://flatfull.com/themes/assets/video/big_buck_bunny_trailer.m4v",
         ogv: "http://flatfull.com/themes/assets/video/big_buck_bunny_trailer.ogv",
         webmv: "http://flatfull.com/themes/assets/video/big_buck_bunny_trailer.webm",

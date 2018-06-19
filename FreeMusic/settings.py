@@ -25,7 +25,7 @@ SECRET_KEY = 'zapm_s#fsbi6x()c5($xm#cdi6xj7ub)9-w5f6awct&9fesl_y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -124,4 +124,5 @@ STATICFILES_DIRS = (
     ('css',os.path.join(STATIC_ROOT,'css').replace('\\','/') ),
     ('js',os.path.join(STATIC_ROOT,'js').replace('\\','/') ),
     ('images',os.path.join(STATIC_ROOT,'images').replace('\\','/') ),
+    ('fonts',os.path.join(STATIC_ROOT,'fonts').replace('\\','/') ),
 )
