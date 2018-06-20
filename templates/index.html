@@ -493,8 +493,10 @@
       </div>
           <div class="modal-body">
                 <div class="form-group">
+                  <form id="up_form" enctype="multipart/form-data" method="post" action="/uploadmusic">
+                        {% csrf_token %}
                         <label for="song_name">Name of your song</label>
-                        <input type="text" class="form-control" id="song_name" value="Fly me to the Moon"><br>
+                        <input type="text" class="form-control" name="song_name" value="Fly me to the Moon"><br>
                         <label for="song_type">Song Type</label><br>
                         <div class="btn-group m-r">
     	                    <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle">
@@ -534,52 +536,15 @@
         		                  <span class="text">Add</span>
   		                      </button><br><br>
                 <label for="music_file">Chose your music file</label>
-                <input type="file" class="form-control-file" id="music_file"><br>
-                <footer class="footer bg-info">
-                  <div id="jp_container_1">
-                    <div class="jp-type-playlist">
-                      <div id="jplayer_1" class="jp-jplayer hide"></div>
-                      <div class="jp-gui">
-                        <div class="jp-video-play hide">
-                          <a class="jp-video-play-icon">play</a>
-                        </div>
-                        <div class="jp-interface">
-                          <div class="jp-controls">
-                            <div>
-                              <a class="jp-play"><i class="icon-control-play i-2x"></i></a>
-                              <a class="jp-pause hid"><i class="icon-control-pause i-2x"></i></a>
-                            </div>
-                            <div class="hide"><a class="jp-stop"><i class="fa fa-stop"></i></a></div>
-                            <div class="jp-progress hidden-xs">
-                              <div class="jp-seek-bar dk">
-                                <div class="jp-play-bar bg-info">
-                                  <div class="jp-title text-lt">Fly me to the Moon</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted"></div>
-                            <div class="hidden-xs hidden-sm jp-duration text-xs text-muted"></div>
-                            <div class="hidden-xs hidden-sm">
-                              <a class="jp-mute" title="mute"><i class="icon-volume-2"></i></a>
-                              <a class="jp-unmute hid" title="unmute"><i class="icon-volume-off"></i></a>
-                            </div>
-                            <div class="hidden-xs hidden-sm jp-volume">
-                              <div class="jp-volume-bar dk">
-                                <div class="jp-volume-bar-value lter"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </footer>
+                <input type="file" class="form-control-file" name="music" id="music_file"><br>
+                <audio id="audio_preview" controls="" style="display: none;width: 100%"></audio>
               </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" onclick="addMusic()" data-dismiss="modal" data-toggle="modal" data-target="#upload_succeed_modal" class="btn btn-info">Upload</button>
           </div>
+        </form>
     </div>
   </div>
 </div>

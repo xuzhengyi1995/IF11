@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.signIn),
     path('signup', views.signUp),
     path('tiandi', views.tianDi),
+    path('uploadmusic', views.uploadMusic),
     path('images/<item>/', views.redirectToImages),
     path('js/<item>/', views.redirectToJs),
     path('js/<folder>/<item>/', views.redirectToJsFolder),
