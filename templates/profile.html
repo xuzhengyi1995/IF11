@@ -2,7 +2,7 @@
 <html lang="en" class="app">
 <head>
   <meta charset="utf-8" />
-  <title>FreeMusic</title>
+  <title>FreeMusic | profile</title>
   <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />
@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="css/font.css" type="text/css" />
   <link rel="stylesheet" href="css/app.css" type="text/css" />
-    <!--[if lt IE 9]>
+
+  <!--[if lt IE 9]>
     <script src="js/ie/html5shiv.js"></script>
     <script src="js/ie/respond.min.js"></script>
     <script src="js/ie/excanvas.js"></script>
@@ -21,7 +22,7 @@
 <body class="">
   <section class="vbox">
     <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
-      <div class="navbar-header aside bg-info nav-xs">
+      <div class="navbar-header aside bg-info dk">
         <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
           <i class="icon-list"></i>
         </a>
@@ -33,8 +34,7 @@
         <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
           <i class="icon-settings"></i>
         </a>
-      </div>
-       <ul class="nav navbar-nav hidden-xs">
+      </div>      <ul class="nav navbar-nav hidden-xs">
         <li>
           <a href="#nav,.navbar-header" data-toggle="class:nav-xs,nav-xs" class="text-muted">
             <i class="fa fa-indent text"></i>
@@ -124,7 +124,7 @@
     <section>
       <section class="hbox stretch">
         <!-- .aside -->
-        <aside class="bg-black dk nav-xs aside hidden-print" id="nav">
+        <aside class="bg-black dk aside hidden-print" id="nav">
           <section class="vbox">
             <section class="w-f-md scrollable">
               <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
@@ -164,11 +164,9 @@
                     </li>
                     <li class="m-b hidden-nav-xs"></li>
                   </ul>
+
                   <ul class="nav text-sm">
-                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
-                      <span class="pull-right"><a href="#"><i class="icon-plus i-lg"></i></a></span>
-                      Playlist
-                    </li>
+
                     <li>
                       <a href="#">
                         <i class="icon-music-tone icon"></i>
@@ -227,236 +225,171 @@
                       </li>
                     </ul>
                   </div>
-                </div>
-              </footer>
+                </div>            </footer>
           </section>
         </aside>
         <!-- /.aside -->
         <section id="content">
-          <section class="hbox stretch">
-            <section>
-              <section class="vbox">
-                <section class="scrollable padder-lg w-f-md" id="bjax-target">
-                  <a href="#" class="pull-right text-muted m-t-lg" data-toggle="class:fa-spin" ><i class="icon-refresh i-lg  inline" id="refresh"></i></a>
-                  <h2 class="font-thin m-b">Discover <span class="musicbar animate inline m-l-sm" style="width:20px;height:20px">
-                    <span class="bar1 a1 bg-primary lter"></span>
-                    <span class="bar2 a2 bg-info lt"></span>
-                    <span class="bar3 a3 bg-success"></span>
-                    <span class="bar4 a4 bg-warning dk"></span>
-                    <span class="bar5 a5 bg-danger dker"></span>
-                  </span></h2>
-                  <div class="row row-sm">
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                      <div class="item">
-                        <div class="pos-rlt">
-                          <div class="bottom">
-                            <span class="badge bg-info m-l-sm m-b-sm">03:20</span>
+          <section class="vbox">
+            <section class="scrollable">
+              <section class="hbox stretch">
+                <aside class="aside-lg bg-light lter b-r">
+                  <section class="vbox">
+                    <section class="scrollable">
+                      <div class="wrapper">
+                        <div class="text-center m-b m-t">
+                          <a href="#" class="thumb-lg">
+                            <img src="images/haha.jpg" class="img-circle">
+                          </a>
+                          <div>
+                            <div class="h3 m-t-xs m-b-xs">Yi ZHANG</div>
+                            <small class="text-muted"><i class="fa fa-map-marker"></i> Paris, FR</small>
                           </div>
-                          <div class="item-overlay opacity r r-2x bg-black">
-                            <div class="text-info padder m-t-sm text-sm">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star-o text-muted"></i>
-                            </div>
-                            <div class="center text-center m-t-n">
-                              <a href="#"><i class="icon-control-play i-2x"></i></a>
-                            </div>
-                            <div class="bottom padder m-b-sm">
-                              <a href="#" class="pull-right">
-                                <i class="fa fa-heart-o"></i>
-                              </a>
+                        </div>
+                        <div class="panel wrapper">
+                          <div class="row text-center">
+                            <div class="col-xs-4">
                               <a href="#">
-                                <i class="fa fa-plus-circle"></i>
+                                <span class="m-b-xs h4 block">245K</span>
+                                <small class="text-muted">Followers</small>
                               </a>
                             </div>
-                          </div>
-                          <a href="#"><img src="images/likethat.jpg" alt="" class="r r-2x img-full"></a>
-                        </div>
-                        <div class="padder-v">
-                          <a href="#" class="text-ellipsis">Like That</a>
-                          <a href="#" class="text-ellipsis text-xs text-muted">Yifan WU</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                      <div class="item">
-                        <div class="pos-rlt">
-                          <div class="item-overlay opacity r r-2x bg-black">
-                            <div class="text-info padder m-t-sm text-sm">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star-o text-muted"></i>
-                            </div>
-                            <div class="center text-center m-t-n">
-                              <a href="#"><i class="icon-control-play i-2x"></i></a>
-                            </div>
-                            <div class="bottom padder m-b-sm">
-                              <a href="#" class="pull-right">
-                                <i class="fa fa-heart-o"></i>
-                              </a>
+                            <div class="col-xs-4">
                               <a href="#">
-                                <i class="fa fa-plus-circle"></i>
+                                <span class="m-b-xs h4 block">55</span>
+                                <small class="text-muted">Following</small>
                               </a>
                             </div>
-                          </div>
-                          <a href="#"><img src="images/tiandi.jpg" alt="" class="r r-2x img-full"></a>
-                        </div>
-                        <div class="padder-v">
-                          <a href="/tiandi" class="text-ellipsis">Tian Di</a>
-                          <a href="#" class="text-ellipsis text-xs text-muted">Yifan WU</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                      <div class="item">
-                        <div class="pos-rlt">
-                          <div class="item-overlay opacity r r-2x bg-black">
-                            <div class="text-info padder m-t-sm text-sm">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star-o text-muted"></i>
-                            </div>
-                            <div class="center text-center m-t-n">
-                              <a href="#"><i class="icon-control-play i-2x"></i></a>
-                            </div>
-                            <div class="bottom padder m-b-sm">
-                              <a href="#" class="pull-right">
-                                <i class="fa fa-heart-o"></i>
-                              </a>
+                            <div class="col-xs-4">
                               <a href="#">
-                                <i class="fa fa-plus-circle"></i>
+                                <span class="m-b-xs h4 block">43</span>
+                                <small class="text-muted">Songs</small>
                               </a>
                             </div>
                           </div>
-                          <a href="#"><img src="images/cool.jpeg" alt="" class="r r-2x img-full"></a>
                         </div>
-                        <div class="padder-v">
-                          <a href="#" class="text-ellipsis">So what</a>
-                          <a href="#" class="text-ellipsis text-xs text-muted">Yifan WU</a>
+                        <div class="btn-group btn-group-justified m-b">
+                          <a class="btn btn-success btn-rounded" data-toggle="button">
+                            <span class="text">
+                              <i class="fa fa-eye"></i> Follow
+                            </span>
+                            <span class="text-active">
+                              <i class="fa fa-eye"></i> Following
+                            </span>
+                          </a>
+                          <a class="btn btn-dark btn-rounded">
+                            <i class="fa fa-comment-o"></i> Chat
+                          </a>
+                        </div>
+                        <div>
+                          <small class="text-uc text-xs text-muted">about me</small>
+                          <p>Artist</p>
+                          <small class="text-uc text-xs text-muted">Work e-mail</small>
+                          <p>yi.zhang@utt.fr</p>
+                          <small class="text-uc text-xs text-muted">info</small>
+                          <p>Hey guys, i am WU Yifan, check out my new album Tiandi. I hope your guys enjoys it. Any further cooperation pls contact me by email.</p>
+                          <div class="line"></div>
+                          <small class="text-uc text-xs text-muted">connection</small>
+                          <p class="m-t-sm">
+                            <a href="#" class="btn btn-rounded btn-twitter btn-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="btn btn-rounded btn-facebook btn-icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="btn btn-rounded btn-gplus btn-icon"><i class="fa fa-google-plus"></i></a>
+                          </p>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </section>
-                <footer class="footer bg-dark">
-                  <div id="jp_container_1">
-                    <div class="jp-type-playlist">
-                      <div id="jplayer_1" class="jp-jplayer hide"></div>
-                      <div class="jp-gui">
-                        <div class="jp-video-play hide">
-                          <a class="jp-video-play-icon">play</a>
+                    </section>
+                  </section>
+                </aside>
+                <aside class="bg-white">
+                  <section class="vbox">
+                    <header class="header bg-light lt">
+                      <ul class="nav nav-tabs nav-white">
+                        <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
+                        <li class=""><a href="#events" data-toggle="tab">Events</a></li>
+                        <li class=""><a href="#interaction" data-toggle="tab">Interaction</a></li>
+                      </ul>
+                    </header>
+                    <section class="scrollable">
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="activity">
+                          <ul class="list-group no-radius m-b-none m-t-n-xxs list-group-lg no-border">
+                            <li class="list-group-item">
+                              <a href="#" class="thumb-sm pull-left m-r-sm">
+                                <img src="images/wangnima.png" class="img-circle">
+                              </a>
+                              <a href="#" class="clear">
+                                <small class="pull-right">1 hour ago</small>
+                                <strong class="block">Xianglong LI</strong>
+                                <small>Learn more to make more good music.</small>
+                              </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#" class="thumb-sm pull-left m-r-sm">
+                                <img src="images/dufu.png" class="img-circle">
+                              </a>
+                              <a href="#" class="clear">
+                                <small class="pull-right">1 hour ago</small>
+                                <strong class="block">Zhengyi XU</strong>
+                                <small>Learn more to make more good music.</small>
+                              </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#" class="thumb-sm pull-left m-r-sm">
+                                <img src="images/nv.png" class="img-circle">
+                              </a>
+                              <a href="#" class="clear">
+                                <small class="pull-right">2 hours ago</small>
+                                <strong class="block">Xiaowen Wang</strong>
+                                <small>Happy to join this plate forme.</small>
+                              </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#" class="thumb-sm pull-left m-r-sm">
+                                <img src="images/haha.jpg" class="img-circle">
+                              </a>
+                              <a href="#" class="clear">
+                                <small class="pull-right">1 day ago</small>
+                                <strong class="block">Yi ZHANG</strong>
+                                <small>Please guys checkout my new albums Tiandi.</small>
+                              </a>
+                            </li>
+                          </ul>
                         </div>
-                        <div class="jp-interface">
-                          <div class="jp-controls">
-                            <div><a class="jp-previous"><i class="icon-control-rewind i-lg"></i></a></div>
-                            <div>
-                              <a class="jp-play"><i class="icon-control-play i-2x"></i></a>
-                              <a class="jp-pause hid"><i class="icon-control-pause i-2x"></i></a>
-                            </div>
-                            <div><a class="jp-next"><i class="icon-control-forward i-lg"></i></a></div>
-                            <div class="hide"><a class="jp-stop"><i class="fa fa-stop"></i></a></div>
-                            <div><a class="" data-toggle="dropdown" data-target="#playlist"><i class="icon-list"></i></a></div>
-                            <div class="jp-progress hidden-xs">
-                              <div class="jp-seek-bar dk">
-                                <div class="jp-play-bar bg-info">
-                                </div>
-                                <div class="jp-title text-lt">
-                                  <ul>
-                                    <li></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted"></div>
-                            <div class="hidden-xs hidden-sm jp-duration text-xs text-muted"></div>
-                            <div class="hidden-xs hidden-sm">
-                              <a class="jp-mute" title="mute"><i class="icon-volume-2"></i></a>
-                              <a class="jp-unmute hid" title="unmute"><i class="icon-volume-off"></i></a>
-                            </div>
-                            <div class="hidden-xs hidden-sm jp-volume">
-                              <div class="jp-volume-bar dk">
-                                <div class="jp-volume-bar-value lter"></div>
-                              </div>
-                            </div>
-                            <div>
-                              <a class="jp-shuffle" title="shuffle"><i class="icon-shuffle text-muted"></i></a>
-                              <a class="jp-shuffle-off hid" title="shuffle off"><i class="icon-shuffle text-lt"></i></a>
-                            </div>
-                            <div>
-                              <a class="jp-repeat" title="repeat"><i class="icon-loop text-muted"></i></a>
-                              <a class="jp-repeat-off hid" title="repeat off"><i class="icon-loop text-lt"></i></a>
-                            </div>
-                            <div class="hide">
-                              <a class="jp-full-screen" title="full screen"><i class="fa fa-expand"></i></a>
-                              <a class="jp-restore-screen" title="restore screen"><i class="fa fa-compress text-lt"></i></a>
-                            </div>
+                        <div class="tab-pane" id="events">
+                          <ul class="list-group no-radius m-b-none m-t-n-xxs list-group-lg no-border">
+                            <li class="list-group-item">
+                              <a href="#" class="thumb-sm pull-left m-r-sm">
+                                <img src="images/tiandi.jpg" class="img-circle">
+                              </a>
+                              <a href="#" class="clear">
+                                <small class="pull-right">1 day ago</small>
+                                <strong class="block">Hold by Yi ZHANG</strong>
+                                <small>Please guys checkout my new albums Tiandi.</small>
+                              </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#" class="thumb-sm pull-left m-r-sm">
+                                <img src="images/m18.jpg" class="img-circle">
+                              </a>
+                              <a href="#" class="clear">
+                                <small class="pull-right">2 hours ago</small>
+                                <strong class="block">Hold by Xiaowen Wang</strong>
+                                <small>There will be a live show tonight.</small>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane" id="interaction">
+                          <div class="text-center wrapper">
+                            <i class="fa fa-spinner fa fa-spin fa fa-large"></i>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </footer>
+                    </section>
+                  </section>
+                </aside>
               </section>
             </section>
-            <!-- side content -->
-            <aside class="aside-md bg-light dk" id="sidebar">
-              <section class="vbox animated fadeInRight">
-                <section class="w-f-md scrollable hover">
-                  <h4 class="font-thin m-l-md m-t">Connected</h4>
-                  <ul class="list-group no-bg no-borders auto m-t-n-xxs">
-                    <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/dufu.png" alt="..." class="img-circle">
-                        <i class="on b-light right sm"></i>
-                      </span>
-                      <div class="clear">
-                        <div><a href="#">Zhengyi XU</a></div>
-                        <small class="text-muted">Troyes</small>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/nv.png" alt="...">
-                        <i class="away b-light right sm"></i>
-                      </span>
-                      <div class="clear">
-                        <div><a href="#">Xiaowen WANG</a></div>
-                        <small class="text-muted">Paris</small>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <span class="pull-left thumb-xs m-t-xs avatar m-l-xs m-r-sm">
-                        <img src="images/wangnima.png" alt="...">
-                        <i class="away b-light right sm"></i>
-                      </span>
-                      <div class="clear">
-                        <div><a href="#">Xianglong LI</a></div>
-                        <small class="text-muted">UTT</small>
-                      </div>
-                    </li>
-                  </ul>
-                </section>
-                <footer class="footer footer-md bg-black">
-                  <form class="" role="search">
-                    <div class="form-group clearfix m-b-none">
-                      <div class="input-group m-t m-b">
-                        <span class="input-group-btn">
-                          <button type="submit" class="btn btn-sm bg-empty text-muted btn-icon"><i class="fa fa-search"></i></button>
-                        </span>
-                        <input type="text" class="form-control input-sm text-white bg-empty b-b b-dark no-border" placeholder="Search members">
-                      </div>
-                    </div>
-                  </form>
-                </footer>
-              </section>
-            </aside>
-            <!-- / side content -->
           </section>
           <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
         </section>
@@ -469,12 +402,11 @@
   <!-- App -->
   <script src="js/app.js"></script>
   <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="js/app.plugin.js"></script>
+  <script src="js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+  <script src="js/app.plugin.js"></script>
   <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
   <script type="text/javascript" src="js/jPlayer/demo.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
   <div class="modal fade" id="new_song_modal" tabindex="-1" role="dialog" aria-labelledby="new_song_modalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -491,20 +423,20 @@
                         <input type="text" class="form-control" id="song_name" value="Fly me to the Moon"><br>
                         <label for="song_type">Song Type</label><br>
                         <div class="btn-group m-r">
-    	                    <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle">
-    	                      <span class="dropdown-label">Type</span>
-    	                      <span class="caret"></span>
-    	                    </button>
-    	                    <ul class="dropdown-menu dropdown-select">
-    	                        <li class="active"><input type="radio" name="d-s-r" checked=""><a href="#">Jazz</a></li>
-    	                        <li><input type="radio" name="d-s-r"><a href="#">Blues</a></li>
-    	                        <li><input type="radio" name="d-s-r"><a href="#">R&B</a></li>
+                          <button data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle">
+                            <span class="dropdown-label">Type</span>
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-select">
+                              <li class="active"><input type="radio" name="d-s-r" checked=""><a href="#">Jazz</a></li>
+                              <li><input type="radio" name="d-s-r"><a href="#">Blues</a></li>
+                              <li><input type="radio" name="d-s-r"><a href="#">R&B</a></li>
                               <li><input type="radio" name="d-s-r"><a href="#">Rock</a></li>
                               <li><input type="radio" name="d-s-r"><a href="#">Metal</a></li>
                               <li><input type="radio" name="d-s-r"><a href="#">House</a></li>
-    	                        <!-- <li class="disabled"><input type="radio" name="d-s-r" disabled=""><a href="#">I'm disabled</a></li> -->
-    	                    </ul>
-    	                  </div><br><br>
+                              <!-- <li class="disabled"><input type="radio" name="d-s-r" disabled=""><a href="#">I'm disabled</a></li> -->
+                          </ul>
+                        </div><br><br>
                         <label for="song_type">Compositors</label><br>
                         <button class="btn btn-sm btn-primary btn-rounded">
                             <span class="text">ZHANG Yi</span>
@@ -513,9 +445,9 @@
                               <span class="text">XU Zhengyi</span>
                             </button>
                           <button class="btn btn-sm btn-default btn-rounded">
-        		                  <i class="fa fa-plus text"></i>
-        		                  <span class="text">Add</span>
-  		                      </button><br><br>
+                              <i class="fa fa-plus text"></i>
+                              <span class="text">Add</span>
+                            </button><br><br>
                         <label for="song_type">Tag</label><br>
                         <button class="btn btn-sm btn-succeed btn-rounded">
                             <span class="text">Happy</span>
@@ -524,9 +456,9 @@
                               <span class="text">Must listen</span>
                             </button>
                           <button class="btn btn-sm btn-default btn-rounded">
-        		                  <i class="fa fa-plus text"></i>
-        		                  <span class="text">Add</span>
-  		                      </button><br><br>
+                              <i class="fa fa-plus text"></i>
+                              <span class="text">Add</span>
+                            </button><br><br>
                 <label for="music_file">Chose your music file</label>
                 <input type="file" class="form-control-file" id="music_file"><br>
                 <footer class="footer bg-info">
@@ -576,10 +508,10 @@
           </div>
     </div>
   </div>
-</div>
+  </div>
 
-<div class="modal fade" id="upload_succeed_modal" tabindex="-1" role="dialog" aria-labelledby="upload_succeed_modalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
+  <div class="modal fade" id="upload_succeed_modal" tabindex="-1" role="dialog" aria-labelledby="upload_succeed_modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
   <div class="modal-content">
     <div class="modal-header">
       <h5 class="modal-title" id="upload_succeed_modalLabel">Upload succeed
@@ -645,35 +577,7 @@
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
   </div>
-</div>
-</div>
-
-<div class="modal fade" id="tiandi_modal" tabindex="-1" role="dialog" aria-labelledby="tiandi_modalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 class="modal-title" id="tiandi_modalLabel">Tian Di - Yifan WU
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </h3>
-    </div>
-        <div class="modal-body">
-            <div class="row">
-              <div class="col-sm-10">
-                <div class="post-media">
-                        <img src="images/tiandi.jpg">
-                </div>
-              </div>
-              <div class="col-sm-2">
-              </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
   </div>
-</div>
-</div>
+  </div>
 </body>
 </html>

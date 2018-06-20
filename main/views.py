@@ -5,6 +5,15 @@ import os
 def home(request):
     return render(request, 'index.html')
 
+def signIn(request):
+    return render(request, 'signin.html')
+
+def signUp(request):
+    return render(request, 'signup.html')
+
+def tianDi(request):
+    return render(request, 'tiandi.html')
+
 def redirectToImages(request, item):
     return HttpResponsePermanentRedirect("/static/images/" + item)
 
@@ -25,3 +34,6 @@ def redirectToFonts(request, item):
 
 def redirectToFonts2(request, folder, item):
     return HttpResponsePermanentRedirect(os.path.join("/static/fonts/", folder, item))
+
+def returnProfile(request):
+    return render(request, 'profile.html')
